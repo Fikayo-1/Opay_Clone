@@ -41,35 +41,43 @@ body {
 
 /* Heading */
 .heading {
-  display: flex;
   padding: 15px;
-  align-items: center;
-  margin-left: 30px;
 }
+
+.heading .container {
+  display: flex;
+  justify-content: space-between; /* Push left and right apart */
+  align-items: center;
+  padding: 0 20px; /* Responsive left/right padding */
+}
+
+.heading-info {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
 .heading img {
   width: 60px;
   height: auto;
   border-radius: 50%;
   background-color: whitesmoke;
 }
-.heading-info {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  align-items: center;
-}
+
 .heading a {
   color: white;
   text-decoration: none;
 }
+
 .heading .heading-links {
-  align-items: center;
   display: flex;
-  gap: 60px;
-  justify-content: center;
+  gap: 25px; /* reduced gap for responsiveness */
+  align-items: center;
 }
+
 .heading-username {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 /* Hero Section */
@@ -151,8 +159,8 @@ body {
   font-weight: bold;
   font-size: 30px;
 }
-.hero-amount-icon{
-    padding: 10px;
+.hero-amount-icon {
+  padding: 10px;
 }
 /* Section 1 - Last Transaction */
 .section-1 {
@@ -161,6 +169,26 @@ body {
   padding: 15px;
   color: white;
   border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.section-1 .transfer-detail{
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-1 .arrow-up {
+  background-color: white;
+  border-radius: 50%;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+  color: green;
+  justify-content: center;
+  display: flex;
+}
+.section-1 .transfer-person{
+  display: flex;
 }
 
 /* Section 2 - Transfer Options */
@@ -184,10 +212,9 @@ body {
   background-color: #1e1e1e;
   border-radius: 10px;
   margin: 15px;
-  
 }
-.section-3-text{
-  width:68rem ;
+.section-3-text {
+  width: 68rem;
   justify-content: center;
   display: flex;
 }
@@ -219,20 +246,19 @@ body {
   display: flex;
   align-items: center;
   padding-left: 130px;
-  padding-right:  250px;
+  padding-right: 250px;
   justify-content: space-between;
 }
-.section-5-bonus-sub{
+.section-5-bonus-sub {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 100px;
 }
-.section-5-bonus-align{
+.section-5-bonus-align {
   gap: 30px;
 }
-.section-5-bonus-align div b{
-  
+.section-5-bonus-align div b {
 }
 .section-5 img {
   width: 30px;
