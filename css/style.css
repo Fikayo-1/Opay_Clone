@@ -153,14 +153,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 20px;
+  line-height: 0px;
 }
 .hero-amount-balance {
   font-weight: bold;
   font-size: 30px;
 }
 .hero-amount-icon {
-  padding: 10px;
+  padding-left: 10px;
+  margin-bottom: 0px !important;
 }
 /* Section 1 - Last Transaction */
 .section-1 {
@@ -170,9 +171,10 @@ body {
   color: white;
   border-radius: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.section-1 .transfer-detail{
+.section-1 .transfer-detail {
   display: flex;
   justify-content: space-between;
 }
@@ -183,12 +185,14 @@ body {
   align-items: center;
   height: 2rem;
   width: 2rem;
-  color: green;
+  color: #00cc99;
   justify-content: center;
   display: flex;
 }
-.section-1 .transfer-person{
+.section-1 .transfer-person {
   display: flex;
+  margin-left: 300px;
+  flex-direction: column;
 }
 
 /* Section 2 - Transfer Options */
@@ -214,7 +218,7 @@ body {
   margin: 15px;
 }
 .section-3-text {
-  width: 68rem;
+  width: 40rem;
   justify-content: center;
   display: flex;
 }
@@ -245,8 +249,8 @@ body {
   margin-top: 10px;
   display: flex;
   align-items: center;
-  padding-left: 130px;
-  padding-right: 250px;
+  padding-left: 6rem;
+  padding-right: 1rem;
   justify-content: space-between;
 }
 .section-5-bonus-sub {
@@ -263,6 +267,24 @@ body {
 .section-5 img {
   width: 30px;
   height: auto;
+}
+.section-5-gift {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin: auto 3rem;
+  align-items: center;
+}
+
+.section-5-gift-link {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+}
+
+.section-5-gift-link a {
+  text-decoration: none;
+  color: black;
 }
 
 /* Section 6 - Invitation Promo */
@@ -283,6 +305,9 @@ body {
 .section-6 .div {
   justify-self: center;
 }
+.section-6 .fa-bullhorn {
+  margin-left: 100px;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -291,7 +316,7 @@ body {
   }
 }
 
-CSS code for finance
+/* CSS code for finance */
 
 /* General Reset */
 * {
@@ -312,6 +337,8 @@ body {
   padding: 1rem;
   background-color: #b2f5f5;
   border-bottom: 1px solid #ccc;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem; 
 }
 
 .section-1-rw > div {
@@ -336,7 +363,7 @@ body {
 .section-1-rw-nav {
   display: flex;
   justify-content: space-around;
-  background-color: #fff;
+  background-color: #000;
   padding: 1rem 0;
   border-bottom: 1px solid #ccc;
 }
@@ -350,7 +377,7 @@ body {
 /* Welcome Back Offer Section */
 .section-2-rw {
   padding: 1rem;
-  background-color: #fff;
+  background-color: #000;
   border-bottom: 1px solid #ccc;
 }
 
@@ -374,8 +401,9 @@ body {
   margin-bottom: 1rem;
 }
 
-.section-2-rw button {
-  background-color: #00e6ac;
+.section-2-rw button,
+.section-5-bonus button {
+  background-color: rgb(0, 204, 153);
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -406,21 +434,12 @@ section > div > p:first-child {
   margin: 1rem 0 0.5rem;
 }
 
-section button {
-  background-color: #00e6ac;
-  border: none;
-  color: white;
-  padding: 0.5rem 1.2rem;
-  border-radius: 15px;
-  margin-top: 0.5rem;
-}
-
 /* Section 3, 4, 5 Styling Shared */
 .section-3-rw,
 .section-4-rw,
 .section-5-rw {
   padding: 1rem;
-  background-color: #fff;
+  background-color: #000;
   border-bottom: 1px solid #ccc;
 }
 
