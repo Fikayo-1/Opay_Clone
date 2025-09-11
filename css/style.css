@@ -359,7 +359,7 @@ body {
 }
 
 .section-1-rw div p {
-  font-size: 0.95rem;
+  font-size:1.5rem;;
   color: #555;
   width: 50%;
 }
@@ -370,6 +370,10 @@ body {
 .section-1-rw .golden-naira {
   width: 50%;
   justify-content: center;
+  gap: 0.3rem;
+}
+.section-1-rw .golden a{
+  font-size: 1.2rem;
 }
 .section-1-rw .cashback {
   justify-content: center;
@@ -384,7 +388,7 @@ body {
   display: flex;
   width: 50%;
   align-items: center;
-  gap: 1rem;
+  gap: 0.8rem;
   justify-content: center;
 }
 .section-1-rw .golden .naira-book .naira-text {
@@ -396,11 +400,9 @@ body {
 }
 .section-1-rw .golden .text {
   font-size: 1.8rem;
-  font: normal bold 16px/60px var(--Poppins);
+  font: normal bold 2.2rem/60px var(--Poppins);
 }
-.section-1-rw .golden span.none {
-  padding-left: 0.5rem;
-}
+
 
 .section-1-rw .golden .golden-naira,
 .section-1-rw .golden .naira-book {
