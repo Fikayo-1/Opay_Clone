@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opay</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/partials/bootstrap.min.css">
 
     <!-- Font Awesome files -->
     <link rel="stylesheet" href="/assets/all.min.css">
@@ -51,9 +51,9 @@
         </div>
     </header>
     <header class="section-1-rw">
-        <div>
+        <div class="section-reward">
 
-            <!-- <div>Menu Button</div> -->
+            <!-- Menu Button -->
             <nav class="navbar navbar-expand-lg navbar-light ">
                 <div class="container-fluid d-flex justify-content-space-between">
                     <a class="navbar-brand justify-self-center" href="#">Rewards</a>
@@ -64,56 +64,66 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav d-flex justify-content-center align-items-center">
-                            <a class="nav-link active d-flex gap-3 align-items-center" aria-current="page" href="#">
+                            <a class="nav-link d-flex gap-3 align-items-center" aria-current="page" href="#">
                                 <i class="fa-solid fa-book"></i>
                                 <span>Rules</span>
                             </a>
                             <a class="nav-link d-flex gap-3 align-items-center" href="#">
                                 <i class="fa-solid fa-clock"></i>
-                               <span>History</span> 
+                                <span>History</span>
                             </a>
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
-        <div>
-            <p>Cashback</p>
-            <p>Voucher &#8358 220</p>
+        <div class="cashback-voucher">
+            <p class="cashback">
+                <span>Cashback</span> 
+                <span><i class="fa-solid fa-question"></i></span>
+            </p>
+            <p class="voucher">Voucher &#8358 220</p>
         </div>
 
-        <div>
-            <div>
-                <!-- Golden Naira icon -->
-                &#8358 3.00
-                <a href="">></a>
+        <div class="golden">
+            <div class="golden-naira d-flex flex-row align-items-center">
+                <img src="/img/golden-naira.png" alt="golden-naira">
+                <span class="text text-dark d-flex">
+                    <span>&#8358</span>
+                    <span>3.00</span>
+                </span>
+                <a href=""><i class="fa-solid fa-angle-right"></i></a>
             </div>
 
-            <div>
-                <!-- Ticket Naira Icon -->
-                <p>3 <a href="">></a></p>
+            <div class="naira-book">
+                <img src="/img/silver-naira.png" alt="Naira-book">
+                <p class="naira-text">
+                    <span class="text">3</span>
+                    <span class="none"><a href=""><i class="fa-solid fa-angle-right"></i></a>
+                    </span>
+                </p>
             </div>
         </div>
     </header>
 
     <section class="section-1-rw-nav">
         <div>
-            <img src="" alt="200 voucher in hand">
+            <img src="/img/200-voucher.png" alt="200-voucher">
             <p>Friday Bonus</p>
         </div>
 
         <div>
-            <img src="" alt="Smily emoji">
+            <img src="/img/friendship.png" alt="Smily emoji">
             <p>Refer Friends</p>
         </div>
 
         <div>
-            <img src="" alt="Spin Now">
+            <img src="/img/spin-now.png" alt="Spin Now">
             <p>Spin & Win</p>
         </div>
 
         <div>
-            <img src="" alt="Sun emoji">
+            <img src="/img/star.png" alt="Sun emoji">
             <p>Play4aChild</p>
         </div>
     </section>
@@ -125,8 +135,8 @@
         <div>
             <div>
                 <div>
-                    <!-- Loan Left-Direction Icon -->
-                    <p>Add money <!-- Naira Icon --> +50</p>
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <p>Add money &#8358 +50</p>
                     <p>Fund your OPay account with &#8358 2000 or more</p>
                 </div>
 
@@ -134,8 +144,8 @@
             </div>
             <div>
                 <div>
-                    <!-- Mobile Internet -->
-                    <p>Data payment <!-- Naira Icon --> +100</p>
+                    <i class="fa-solid fa-signal"></i>
+                    <p>Data payment &#8358 +100</p>
                     <p>Data purchase above &#8358 400 (registered number only)</p>
                 </div>
 
@@ -143,8 +153,8 @@
             </div>
             <div>
                 <div>
-                    <!-- Ticket Icon -->
-                    <p>Betting payment <!-- Naira Icon --> +100</p>
+                    <i class="fa-solid fa-dice"></i>
+                    <p>Betting payment &#8358 +100</p>
                     <p>Fund betting account with &#8358 600 or more</p>
                 </div>
 
@@ -152,11 +162,15 @@
             </div>
         </div>
 
-        <a href="">View ALL <!-- Dropdown Icon--></a>
+        <a href="" class="nav-link text-light">View ALL <i class="fa-solid fa-angle-down"></i></a>
     </section>
 
     <section>
-        <div>Hot Vouchers <!--Naira ticket --></div>
+        <div>Hot Vouchers
+            <span>
+                <img src="/img/naira.png"></img>
+            </span>
+        </div>
 
         <div>
             <div>
@@ -182,8 +196,8 @@
 
     <section class="section-3-rw">
         <div>
-            <div>Recommend Data Offers <!--Blitz Icon--></div>
-            <div>Rules <a href="">></a></div>
+            <div>Recommend Data Offers <i class="fa-solid fa-bolt"></i></div>
+            <div>Rules <a href=""><i class="fa-solid fa-angle-right"></i></a></div>
         </div>
         <div>
             <div>
@@ -204,7 +218,7 @@
         <div>
             <div>
                 <div>99% OFF</div>
-                <img src="" alt="Mtn Logo">
+                <img src="/img/mtn-logo.jpg" alt="Mtn Logo">
             </div>
             <div>
                 <p>Buy &#8358 100 Airtime, pay &#8358 1</p>
@@ -226,10 +240,11 @@
         <div>
             <div>
                 <div>
-                    <!-- Verified Contact List Icon -->
+                    <i class="fa-solid fa-id-card"></i>
                 </div>
                 <div>
-                    <div>Upgrade to Tier2 <!--Golden Naira Symbol--> +50</div>
+                    <div>Upgrade to Tier2 <img src="/img/golden-naira.png" alt="golden-naira">
+                        +50</div>
                     <div>Upgrade to Tier2 to earn &#8358 50 and get higher transaction limit</div>
                 </div>
 
@@ -241,10 +256,11 @@
         <div>
             <div>
                 <div>
-                    <!-- Mobile Internet Icon -->
+                    <i class="fa-solid fa-signal"></i>
                 </div>
                 <div>
-                    <div>Glo Airtime <!--Golden Naira Symbol--> +Up to 6%</div>
+                    <div>Glo Airtime <img src="/img/golden-naira.png" alt="golden-naira">
+                        +Up to 6%</div>
                     <div>Buy Airtime and get up to 6% Cashback</div>
                 </div>
 
@@ -255,10 +271,11 @@
             <div>
                 <div>
                     <div>
-                        <!-- Mobile Internet Icon -->
+                        <i class="fa-solid fa-signal"></i>
                     </div>
                     <div>
-                        <div>9 Mobile Airtime <!--Golden Naira Symbol--> +Up to 5%</div>
+                        <div>9 Mobile Airtime <img src="/img/golden-naira.png" alt="golden-naira">
+                            +Up to 5%</div>
                         <div>Buy Airtime and get up to 5% Cashback</div>
                     </div>
 
@@ -268,7 +285,7 @@
                 </div>
             </div>
             <div>
-                <p>View All <a href=""><!--Down Arrow Icon--></a></p>
+                <p>View All <a href=""><i class="fa-solid fa-angle-down"></i></a></p>
             </div>
         </div>
     </section>
@@ -279,7 +296,7 @@
             <button>Claim 8 Discounts</button>
         </div>
         <div>
-            <img src="" alt="210 voucher woth percent logo picture">
+            <img src="/img/210-voucher.png" alt="210 voucher with percent logo ">
         </div>
     </section>
 </body>
