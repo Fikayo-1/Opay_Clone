@@ -333,7 +333,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Segoe UI", sans-serif;
   background-color: #e6ffff;
@@ -359,9 +358,12 @@ body {
 }
 
 .section-1-rw div p {
-  font-size:1.5rem;;
+  font-size: 1.3rem;
   color: #555;
   width: 50%;
+}
+.section-1-rw .golden {
+  margin-bottom: 4rem;
 }
 .section-1-rw .golden-naira img {
   width: 3rem;
@@ -372,7 +374,7 @@ body {
   justify-content: center;
   gap: 0.3rem;
 }
-.section-1-rw .golden a{
+.section-1-rw .golden a {
   font-size: 1.2rem;
 }
 .section-1-rw .cashback {
@@ -403,7 +405,6 @@ body {
   font: normal bold 2.2rem/60px var(--Poppins);
 }
 
-
 .section-1-rw .golden .golden-naira,
 .section-1-rw .golden .naira-book {
   height: 2rem;
@@ -412,7 +413,7 @@ body {
   color: #000;
   font-weight: bold;
 }
-.section-1-rw .voucher {
+.section-1-rw .voucher-220 {
   padding: 0;
   width: 50%;
   justify-content: center;
@@ -420,20 +421,24 @@ body {
 }
 
 /* Navigation Icons */
-.section-1-rw-nav {
-  display: flex;
-  justify-content: space-around;
-  background-color: #000;
-  padding: 1rem 0;
-  border-bottom: 1px solid #ccc;
-}
-
-.section-1-rw-nav div {
+.section-1-rw-nav .card {
   text-align: center;
   font-size: 0.9rem;
-  width: 25%;
+  border-radius: 3rem;
 }
-
+.section-1-rw-nav .card-img {
+  height: auto;
+  width: 120px;
+  border-radius: 30%;
+  margin: 1.5rem 2.4rem;
+}
+.section-1-rw-nav .card-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.section-1-rw-nav .card .refer-img {
+  padding-top: 2.6rem;
+}
 .section-1-rw .navbar-expand-lg {
   width: 100%;
 }
@@ -451,12 +456,52 @@ body {
   text-align: left;
   font-size: 2.5rem;
 }
+/* Keep nav bar in place */
+.section-1-rw-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  width: 100%;
+}
+
+.section-1-rw {
+  position: relative;
+  z-index: -1;
+}
+
+/* Float the cards upwards */
+.section-1-rw-nav .card {
+  font-size: 0.9rem;
+  border-radius: 3rem;
+  background-color: #111; /* card bg */
+  position: relative;
+  top: -3rem; /* overlap amount – adjust as needed */
+  padding: 1rem;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Image inside cards */
+.section-1-rw-nav .card-img {
+  width: 100px;
+  height: auto;
+  border-radius: 30%;
+  margin: 0 auto 1rem;
+}
+
+.section-1-rw-nav .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 
 /* Welcome Back Offer Section */
 .section-2-rw {
   padding: 1rem;
   background-color: #000;
   border-bottom: 1px solid #ccc;
+  margin-top: 12.5rem;
 }
 
 .section-2-rw > div:first-child {
@@ -464,21 +509,36 @@ body {
   font-size: 1.1rem;
   margin-bottom: 1rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .section-2-rw > div:nth-child(2) > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1e1e1e;
   color: #fff;
   border-radius: 10px;
   padding: 1rem;
   margin-bottom: 1rem;
 }
-
+.section-2-rw-money {
+  background-color: #1e1e1e;
+}
+.section-2-rw-money .icon-bg {
+  align-items: center;
+  display: flex;
+}
+.section-2-rw-money p img {
+  height: 3rem;
+}
+.section-2-rw-money .welcome-text {
+  width: 14.9rem;
+}
+.section-2-rw-money .w-50 {
+  padding-left: 3rem;
+}
 .section-2-rw button,
 .section-5-bonus button {
   background-color: rgb(0, 204, 153);
@@ -511,6 +571,315 @@ section > div > p:first-child {
   font-weight: bold;
   margin: 1rem 0 0.5rem;
 }
+.rw-voucher img {
+  height: 3rem;
+}
+.rw-voucher .rw-first {
+  padding-left: 2rem;
+}
+
+.voucher {
+  background: #0f2c28; /* green background */
+  border-radius: 12px;
+  width: 200px;
+  padding: 20px;
+  text-align: center; /* center content */
+  font-family: Arial, sans-serif;
+}
+
+.voucher-amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00d29d; /* bright green */
+  margin: 8px 0;
+}
+
+.voucher-title {
+  font-size: 14px;
+  margin: 8px 0;
+  color: #fff;
+}
+
+.voucher-available {
+  font-size: 12px;
+  color: #aaa;
+  margin: 8px 0;
+}
+
+.voucher-btn {
+  background: #00d29d;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.voucher-sect {
+  margin-bottom: 1.5rem;
+}
+
+.section-3-rw {
+  background: #222;
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;              /* full width */
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 16px;          /* base font size bigger */
+}
+
+/* Header */
+.section-3-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.section-3-title i {
+  color: #f9d71c;
+}
+
+.section-3-rules a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Card Top */
+.section-3-card {
+  background: #333;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card-times {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.time-box {
+  background: #111;
+  padding: 6px 14px;
+  border-radius: 8px;
+}
+
+.time-box.active {
+  background: #006d55;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  font-size: 16px;
+}
+
+.count-box {
+  background: #ff4d6d;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Offer Section */
+.section-3-offer {
+  background: #0f2c28;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.discount {
+  background: #c5f5ff;
+  color: #000;
+  font-size: 14px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.offer-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.offer-details {
+  flex: 1;
+  padding: 0 15px;
+  font-size: 16px;
+}
+
+.offer-text {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.progress {
+  background: #006d55;
+  height: 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  text-align: right;
+  font-size: 13px;
+  color: #00d29d;
+}
+
+.new-price {
+  color: #00d29d;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.old-price {
+  color: #aaa;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.offer-action {
+  display: flex;
+  align-items: center;
+}
+
+.remind-btn {
+  background: #00d29d;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Section 4: Daily Bonus */
+.section-4-rw {
+  background: #1e1e1e;
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.section-4-rw .bonus-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.bonus-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2b2b2b;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.bonus-icon {
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bonus-text {
+  flex: 1;
+  font-size: 16px;
+}
+
+.bonus-text div:first-child {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.bonus-btn {
+  background: #00d09c;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+
+.view-all {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+/* Section 5: Claim Discounts */
+.section-5-rw {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e6fff5;
+  padding: 16px;
+  border-radius: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.discount-info p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.discount-btn {
+  background: #00d09c;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.discount-img img {
+  max-width: 120px;
+  height: auto;
+}
+
 
 /* Section 3, 4, 5 Styling Shared */
 .section-3-rw,
