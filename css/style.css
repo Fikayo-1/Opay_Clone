@@ -461,7 +461,6 @@ body {
   display: flex;
   justify-content: space-around;
   background-color: #000;
-  border-bottom: 1px solid #ccc;
   position: absolute;
   width: 100%;
 }
@@ -496,57 +495,79 @@ body {
   font-weight: bold;
 }
 
-/* Welcome Back Offer Section */
+/* Section 2: Daily Bonus */
 .section-2-rw {
   padding: 1rem;
-  background-color: #000;
-  border-bottom: 1px solid #ccc;
   margin-top: 12.5rem;
 }
 
-.section-2-rw > div:first-child {
-  font-weight: bold;
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 1.8rem;
-  font-size: 1.6rem;
-}
-
-.section-2-rw > div:nth-child(2) > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
-  border-radius: 10px;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-.section-2-rw-money {
-  background-color: #1e1e1e;
-}
-.section-2-rw-money .icon-bg {
-  align-items: center;
-  display: flex;
-}
-.section-2-rw-money p img {
+.golden-img {
   height: 3rem;
 }
-.section-2-rw-money .welcome-text {
-  width: 14.9rem;
+.section-2-rw {
+  background: #2b2b2b !important;
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  font-family: Arial, sans-serif;
 }
-.section-2-rw-money .w-50 {
-  padding-left: 3rem;
-}
-.section-2-rw button,
-.section-5-bonus button {
-  background-color: rgb(0, 204, 153);
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 15px;
+
+.section-2-rw .bonus-title {
+  font-size: 20px;
   font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.bonus-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.bonus-icon {
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bonus-text {
+  flex: 1;
+  font-size: 16px;
+}
+
+.bonus-text div:first-child {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.bonus-btn {
+  background: #00d09c;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+}
+
+.view-all {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 15px;
+}
+.text-light p {
+  margin: 0;
 }
 
 /* Hot Vouchers Section */
@@ -843,6 +864,9 @@ section > div > p:first-child {
   margin-top: 8px;
   font-size: 15px;
 }
+.text-light p {
+  margin: 0;
+}
 
 /* Section 5: Claim Discounts */
 .section-5-rw {
@@ -863,6 +887,9 @@ section > div > p:first-child {
   margin-bottom: 12px;
   color: #111;
 }
+.discount-info {
+  text-align: center;
+}
 
 .discount-btn {
   background: #00d09c;
@@ -878,13 +905,384 @@ section > div > p:first-child {
   max-width: 120px;
   height: auto;
 }
+.text-light {
+  gap: 1rem;
+}
+
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* dark background */
+    color: white;
+}
+
+/* HEADER SECTION */
+.section-1-fn {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+}
+
+.section-1-fn h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.section-1-fn span {
+    font-size: 12px;
+    color: #999;
+}
+
+.section-1-fn > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Balance + Interest */
+.section-1-fn div div {
+    color: #ccc;
+}
+
+.section-1-fn div div:last-child {
+    color: #00e676; /* green for amounts */
+    font-weight: bold;
+}
+
+/* OWealth CARD */
+.section-2-fn {
+    background-color: #2e1f48; /* purple tone */
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.section-2-fn h2 {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    color: white;
+}
+
+.section-2-fn div {
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+.section-2-fn div:last-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+/* SAVINGS OPTIONS */
+.section-3-fn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 0 15px 15px 15px;
+}
+
+.section-3-fn > div {
+    background-color: #111;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #bbb;
+}
+
+.section-3-fn > div div:first-child {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #a87cf0; /* purple accent for titles */
+}
+
+.section-3-fn > div p {
+    margin: 2px 0;
+    font-size: 12px;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 15px;
+}
+
+/* Card Container (OPay Virtual Card Image) */
+body > div:first-child {
+  background: #1e1e1e;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+body > div:first-child img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Features container */
+body > div:first-child > div {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Each feature item */
+body > div:first-child > div > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* Feature text */
+body > div:first-child p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+body > div:first-child div div {
+  font-size: 13px;
+  color: #ccc;
+}
+
+/* Links in features */
+body a {
+  color: #00c896;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Checkbox section */
+body > div:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  font-size: 13px;
+  color: #ccc;
+}
+
+body input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #00c896;
+}
+
+/* Button */
+body > div:nth-of-type(3) button {
+  width: 100%;
+  padding: 15px;
+  background: #00c896;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111;
+  cursor: pointer;
+}
+
+body > div:nth-of-type(3) button del {
+  color: #333;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f2a24;
+  color: #fff;
+}
+
+/* Profile Header */
+.profile-header {
+  padding: 15px;
+  background: linear-gradient(to bottom, #0f2a24, #0b1f1a);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-text .username {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tier-badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+}
+
+.tier-label {
+  background: #4c3b1f;
+  color: #f3c56b;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+/* Settings */
+.settings-icon {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Balance */
+.balance-section {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balance-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.balance-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.amount {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.shield-icon {
+  background: radial-gradient(circle, rgba(0,255,163,0.2), rgba(0,255,163,0.05));
+  border-radius: 50%;
+  padding: 15px;
+}
+
+/* Security Section */
+.section-1-me {
+  background: linear-gradient(90deg, #01d18e, #00c77b);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.security-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.security-sub {
+  font-size: 13px;
+}
+
+.security-btn button {
+  background: #0f2a24;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Menu Cards */
+.section-2-me, .section-3-me {
+  margin: 15px 10px;
+  background: #1a1f1d;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #2b2f2d;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-text p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.menu-sub {
+  font-size: 12px;
+  color: #bbb;
+}
+
+.menu-arrow {
+  text-decoration: none;
+  color: #666;
+  font-size: 18px;
+}
+
+/* Footer */
+.footer {
+  margin: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #bbb;
+}
+
+.footer-logo {
+  width: 20px;
+}
 
 /* Section 3, 4, 5 Styling Shared */
 .section-3-rw,
 .section-4-rw,
 .section-5-rw {
   padding: 1rem;
-  background-color: #000;
   border-bottom: 1px solid #ccc;
 }
 
@@ -895,7 +1293,6 @@ section > div > p:first-child {
 }
 
 .section-3-rw p,
-.section-4-rw p,
 .section-5-rw p {
   margin-bottom: 0.5rem;
 }
