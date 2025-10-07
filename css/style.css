@@ -21,6 +21,7 @@ body {
   background-color: #121212 !important;
   color: white !important;
   padding-bottom: 80px;
+  font-size: 1rem;
 }
 
 /* Header nav section */
@@ -85,7 +86,9 @@ body {
   gap: 25px; /* reduced gap for responsiveness */
   align-items: center;
 }
-
+.heading-links{
+ font-size: 0.7rem;
+}
 .heading-username {
   font-size: 20px;
 }
@@ -126,7 +129,7 @@ body {
   font-size: 24px;
 }
 .hero-balance-text {
-  font-size: 25px;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 .hero-money {
@@ -156,7 +159,6 @@ body {
 .hero-money-mini {
   display: flex;
   flex-direction: row;
-  gap: 10px;
   align-items: center;
 }
 .hero-amount {
@@ -201,7 +203,7 @@ body {
 }
 .section-1 .transfer-person {
   display: flex;
-  margin-left: 300px;
+
   flex-direction: column;
 }
 
@@ -333,12 +335,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: "Segoe UI", sans-serif;
-  background-color: #e6ffff;
-  color: #000;
-  padding-bottom: 70px;
-}
+
 
 /* Header (Rewards section) */
 .section-1-rw {
@@ -571,7 +568,7 @@ body {
 }
 
 /* Hot Vouchers Section */
-section ul {
+.rw-voucher ul {
   display: flex;
   list-style: none;
   justify-content: space-around;
@@ -910,132 +907,275 @@ section > div > p:first-child {
 }
 
 
-/* General body styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1a1a1a; /* dark background */
-    color: white;
-}
-
 /* HEADER SECTION */
 .section-1-fn {
-    padding: 15px;
-    border-bottom: 1px solid #333;
+  padding: 0.9375rem;
+  border-bottom: 1px solid #333;
 }
 
 .section-1-fn h2 {
-    font-size: 20px;
-    margin: 0;
-    font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  font-weight: bold;
 }
 
 .section-1-fn span {
-    font-size: 12px;
-    color: #999;
+  font-size: 0.75rem;
+  color: #999;
 }
 
 .section-1-fn > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-    font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 0.875rem;
+}
+.nav-link {
+  color: #aaa;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link.active-link {
+  color: #fff;
+}
+
+.nav-link.active-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* space under text */
+  width: 100%;
+  height: 2px;
+  background-color: #fff; /* underline color */
+  border-radius: 2px;
+}
+
+.nav-link {
+  color: #aaa !important; /* gray for inactive */
+  font-weight: 500;
+  position: relative;
+  text-decoration: none; /* remove default underline */
+}
+
+.nav-link:hover {
+  color: #ddd !important; /* lighter on hover */
+}
+
+.nav-link.active,
+.nav-link.active-link {
+  color: #fff !important; /* white for active */
 }
 
 /* Balance + Interest */
 .section-1-fn div div {
-    color: #ccc;
+  color: #ccc;
 }
 
 .section-1-fn div div:last-child {
-    color: #00e676; /* green for amounts */
-    font-weight: bold;
+  color: #00e676; /* green for amounts */
+  font-weight: bold;
 }
 
 /* OWealth CARD */
 .section-2-fn {
-    background-color: #2e1f48; /* purple tone */
-    margin: 15px;
-    padding: 15px;
-    border-radius: 10px;
+  background-color: #2e1f48; /* purple tone */
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .section-2-fn h2 {
-    margin: 0 0 8px 0;
-    font-size: 16px;
-    color: white;
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  color: white;
 }
 
 .section-2-fn div {
-    font-size: 13px;
-    margin-bottom: 5px;
-    color: #ccc;
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #ccc;
 }
 
 .section-2-fn div:last-child {
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+.section-2-fn a {
+  color: #7d4fff;
+}
+.section-1-fn .interest-text {
+  color: white !important;
 }
 
 /* SAVINGS OPTIONS */
 .section-3-fn {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    padding: 0 15px 15px 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 0 15px 15px 15px;
 }
 
 .section-3-fn > div {
-    background-color: #111;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 13px;
-    color: #bbb;
+  background-color: #111;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 13px;
+  color: #bbb;
 }
 
 .section-3-fn > div div:first-child {
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 6px;
-    color: #a87cf0; /* purple accent for titles */
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #a87cf0; /* purple accent for titles */
 }
 
 .section-3-fn > div p {
-    margin: 2px 0;
-    font-size: 12px;
+  margin: 2px 0;
+  font-size: 12px;
 }
 
-body {
-  background-color: #111;
+.section-3-fn img {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.section-3-fn a {
+  color: #7d4fff;
+}
+
+
+/* Card Section */
+
+.header-cd .text-left {
+  justify-self: right;
+  font-size: 1.4rem;
+}
+
+.header-cd .text-right {
+  justify-self: right;
+  text-align: center;
+  color: #42c087;
+}
+
+.section-1-cd .nav-link {
+  color: #aaa;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.section-1-cd .nav-link:hover {
+  color: #ddd;
+}
+
+.section-1-cd .nav-link.active-link {
   color: #fff;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 15px;
 }
 
-/* Card Container (OPay Virtual Card Image) */
-body > div:first-child {
-  background: #1e1e1e;
-  padding: 15px;
+.section-1-cd .nav-link.active-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 4px; /* big underline */
+  background-color: #fff;
+  border-radius: 2px;
+}
+.terms-sect {
+  background: black;
+  padding: 1rem;
+}
+
+.card-container {
+  background: #1c1c1c;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.virtual-card {
+  background: #00c896;
+  height: 200px;
   border-radius: 12px;
   margin-bottom: 20px;
-}
-
-body > div:first-child img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 15px;
-}
-
-/* Features container */
-body > div:first-child > div {
   display: flex;
-  flex-direction: column;
-  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
 }
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.feature-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #333;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.feature-text p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.feature-text div {
+  font-size: 13px;
+  color: #aaa;
+}
+
+a {
+  color: #00c896;
+  text-decoration: none;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin: 20px 0;
+}
+
+.terms input {
+  margin-right: 8px;
+}
+
+.cta button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #00c896;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.cta del {
+  color: #ccc;
+  margin-left: 6px;
+  font-size: 14px;
+}
+
 
 /* Each feature item */
 body > div:first-child > div > div {
@@ -1058,7 +1198,7 @@ body > div:first-child div div {
 
 /* Links in features */
 body a {
-  color: #00c896;
+  color: white;
   text-decoration: none;
   font-weight: 500;
 }
@@ -1100,7 +1240,7 @@ body > div:nth-of-type(3) button del {
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0f2a24;
   color: #fff;
 }
@@ -1182,7 +1322,11 @@ body {
 }
 
 .shield-icon {
-  background: radial-gradient(circle, rgba(0,255,163,0.2), rgba(0,255,163,0.05));
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 163, 0.2),
+    rgba(0, 255, 163, 0.05)
+  );
   border-radius: 50%;
   padding: 15px;
 }
@@ -1218,7 +1362,8 @@ body {
 }
 
 /* Menu Cards */
-.section-2-me, .section-3-me {
+.section-2-me,
+.section-3-me {
   margin: 15px 10px;
   background: #1a1f1d;
   border-radius: 12px;
