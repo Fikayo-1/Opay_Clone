@@ -20,7 +20,7 @@ body {
   font-family: var(--Roboto) !important ;
   background-color: #121212 !important;
   color: white !important;
-  padding-bottom: 80px;
+  padding-bottom: 5rem;
   font-size: 1rem;
 }
 
@@ -33,7 +33,7 @@ body {
   width: 100%;
   background-color: #121212;
   border-top: 1px solid #2a2a2a;
-  padding: 10px 0;
+  padding: 0.6rem 0;
 }
 
 .home-nav a {
@@ -42,35 +42,37 @@ body {
   align-self: center;
   color: white;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 0.7rem;
+  text-align: center;
+  align-items: center;
 }
 .home-nav img {
+  width: 0.8rem;
   height: auto;
-  width: 20px;
   border-radius: 50%;
 }
 
 /* Heading */
 .heading {
-  padding: 15px;
+  padding: 1rem;
 }
 
 .heading .container {
   display: flex;
   justify-content: space-between; /* Push left and right apart */
   align-items: center;
-  padding: 0 20px; /* Responsive left/right padding */
+  padding: 0 1.2rem; /* Responsive left/right padding */
 }
 
 .heading-info {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 1rem;
   align-items: center;
 }
 
 .heading img {
-  width: 60px;
+  width: 3rem;
   height: auto;
   border-radius: 50%;
   background-color: whitesmoke;
@@ -80,30 +82,29 @@ body {
   color: white;
   text-decoration: none;
 }
+.headset div {
+  position: relative;
+}
 
 .heading .heading-links {
   display: flex;
-  gap: 25px; /* reduced gap for responsiveness */
+  gap: 1.5rem; /* reduced gap for responsiveness */
   align-items: center;
 }
-.heading-links{
- font-size: 0.7rem;
+.heading-links {
+  font-size: 0.7rem;
 }
 .heading-username {
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 /* Hero Section */
 .hero {
   background-color: #00cc99;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 15px;
+  border-radius: 0.7rem;
+  padding: 1.1rem;
+  margin: 0.9rem;
   color: #000;
-}
-
-.hero div {
-  margin-bottom: 10px;
 }
 
 .hero a {
@@ -113,20 +114,25 @@ body {
 .hero-balance {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
 }
 .hero-balance-history {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 1rem;
 }
+
 .hero-history {
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  margin-right: 30px;
-  font-size: 24px;
+  gap: 0.7rem;
+  margin-right: 2rem;
+  font-size: 1.4rem;
+  align-items: center;
 }
 .hero-balance-text {
   font-size: 1.2rem;
@@ -141,19 +147,21 @@ body {
 .hero-money-add {
   background-color: black;
   color: #00cc99;
-  border-radius: 15px;
+  border-radius: 1rem;
   height: auto;
-  width: 150px;
+  width: 9rem;
   align-items: center;
   justify-content: center;
   display: flex;
+  margin-right: 1.6rem;
+  font-size: 1rem;
 }
 .hero-money-add p {
-  margin: 5px;
+  margin: 0.3rem;
 }
 .hero-money-add a {
   text-decoration: none;
-  margin: 5px;
+  margin: 0.3rem;
   color: #00cc99;
 }
 .hero-money-mini {
@@ -165,23 +173,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 0px;
+  line-height: 0;
+  gap: 0.2rem;
 }
 .hero-amount-balance {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 2rem;
 }
-.hero-amount-icon {
-  padding-left: 10px;
-  margin-bottom: 0px !important;
-}
+
 /* Section 1 - Last Transaction */
 .section-1 {
   background-color: #1e1e1e;
-  margin: 15px;
-  padding: 15px;
+  margin: 1rem;
+  padding: 1rem;
   color: white;
-  border-radius: 10px;
+  border-radius: 0.6rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -211,8 +217,8 @@ body {
 .section-2 {
   display: flex;
   justify-content: space-around;
-  margin: 15px;
-  padding: 10px;
+  margin: 1rem;
+  padding: 0.6rem;
 }
 
 .section-2 div {
@@ -223,19 +229,20 @@ body {
 .section-3 {
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding: 1rem;
   color: white;
   background-color: #1e1e1e;
-  border-radius: 10px;
-  margin: 15px;
+  border-radius: 0.6rem;
+  margin: 1rem;
 }
 .section-3-text {
   width: 40rem;
   justify-content: center;
   display: flex;
+  text-align: center;
 }
 .section-3 img {
-  width: 200px;
+  width: 10rem;
   height: auto;
 }
 
@@ -243,40 +250,50 @@ body {
 .section-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  padding: 15px;
+  gap: 1rem;
+  padding: 1rem;
   text-align: center;
 }
 
 /* Section 5 - Bonus */
 .section-5 {
   background-color: #1e1e1e;
-  padding: 15px;
-  margin: 15px;
+  padding: 1rem;
+  margin: 1rem;
   color: white;
-  border-radius: 10px;
+  border-radius: 0.6rem;
 }
 
 .section-5-bonus {
-  margin-top: 10px;
+  margin-top: 0.6rem;
   display: flex;
   align-items: center;
-  padding-left: 6rem;
-  padding-right: 1rem;
   justify-content: space-between;
+  padding: 0;
 }
+
 .section-5-bonus-sub {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 100px;
+  display: flex;
+  gap: 3rem;
 }
-.section-5-bonus-align {
-  gap: 30px;
+.section-5-bonus button {
+  background: #00d09c;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
 }
 
+.section-3-text {
+  font-size: 0.8rem;
+}
 .section-5 img {
-  width: 30px;
+  width: 1.8rem;
   height: auto;
 }
 .section-5-gift {
@@ -285,12 +302,16 @@ body {
   gap: 0.6rem;
   margin: auto 3rem;
   align-items: center;
+  margin: auto 0;
 }
-
+.section-5-gift .text-light {
+  color: white;
+}
 .section-5-gift-link {
   display: flex;
   flex-direction: row;
   gap: 0.3rem;
+  align-items: center;
 }
 
 .section-5-gift-link a {
@@ -301,14 +322,15 @@ body {
 /* Section 6 - Invitation Promo */
 .section-6 {
   background-color: #2d2d2d;
-  padding: 15px;
-  margin: 15px;
-  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.6rem;
   text-align: center;
   display: flex;
   color: #00cc99;
   gap: 10rem;
   align-items: center;
+  justify-content: center;
 }
 .section-6 i {
   margin-left: 3rem;
@@ -316,26 +338,19 @@ body {
 .section-6 .div {
   justify-self: center;
 }
-.section-6 .fa-bullhorn {
-  margin-left: 100px;
+img.golden-img {
+  width: 2rem;
+  height: auto;
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1224px) {
   .section-4 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 /* CSS code for finance */
-
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 
 /* Header (Rewards section) */
 .section-1-rw {
@@ -347,11 +362,10 @@ body {
 }
 
 .section-1-rw > div {
-  margin: 1rem auto;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.2rem;
 }
 
 .section-1-rw div p {
@@ -360,16 +374,16 @@ body {
   width: 50%;
 }
 .section-1-rw .golden {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
-.section-1-rw .golden-naira img {
+.section-1-rw .golden-naira {
   width: 3rem;
   height: auto;
 }
 .section-1-rw .golden-naira {
   width: 50%;
   justify-content: center;
-  gap: 0.3rem;
+  text-align: center;
 }
 .section-1-rw .golden a {
   font-size: 1.2rem;
@@ -387,8 +401,9 @@ body {
   display: flex;
   width: 50%;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.3rem;
   justify-content: center;
+  text-align: center;
 }
 .section-1-rw .golden .naira-book .naira-text {
   width: auto;
@@ -398,8 +413,7 @@ body {
   margin: 0;
 }
 .section-1-rw .golden .text {
-  font-size: 1.8rem;
-  font: normal bold 2.2rem/60px var(--Poppins);
+  font: normal bold 1.8rem/3.75rem var(--Poppins);
 }
 
 .section-1-rw .golden .golden-naira,
@@ -425,7 +439,7 @@ body {
 }
 .section-1-rw-nav .card-img {
   height: auto;
-  width: 120px;
+  width: 7.5rem;
   border-radius: 30%;
   margin: 1.5rem 2.4rem;
 }
@@ -466,22 +480,26 @@ body {
   position: relative;
   z-index: -1;
 }
-
-/* Float the cards upwards */
-.section-1-rw-nav .card {
-  font-size: 0.9rem;
-  border-radius: 3rem;
-  background-color: #111; /* card bg */
-  position: relative;
-  top: -3rem; /* overlap amount – adjust as needed */
-  padding: 1rem;
-
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+.section-1-rw-nav {
+  display: block;
 }
-
-/* Image inside cards */
+.section-1-rw-nav .card {
+  background-color: #111;
+  font-size: 0.9rem;
+}
+.section-1-rw-nav .card-contain {
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  display: grid;
+  gap: 3rem;
+}
+.section-1-rw-nav .card {
+  top: -3rem;
+  padding: 1rem;
+  box-shadow: 0 4px 0.6rem rgba(0, 0, 0, 0.3);
+}
 .section-1-rw-nav .card-img {
-  width: 100px;
+  width: 6.8rem;
   height: auto;
   border-radius: 30%;
   margin: 0 auto 1rem;
@@ -491,6 +509,11 @@ body {
   font-size: 1.2rem;
   font-weight: bold;
 }
+.bonus-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-left: 2rem;
+}
 
 /* Section 2: Daily Bonus */
 .section-2-rw {
@@ -498,41 +521,23 @@ body {
   margin-top: 12.5rem;
 }
 
-.golden-img {
-  height: 3rem;
-}
 .section-2-rw {
   background: #2b2b2b !important;
   color: white;
-  padding: 16px;
-  border-radius: 12px;
+  padding: 1rem;
+  border-radius: 0.8rem;
   width: 100%;
   box-sizing: border-box;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   font-family: Arial, sans-serif;
-}
-
-.section-2-rw .bonus-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 12px;
-}
-
-.bonus-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 12px;
-  padding: 12px;
-  margin-bottom: 10px;
 }
 
 .bonus-icon {
   background: white;
   color: black;
-  padding: 10px;
-  border-radius: 8px;
-  margin-right: 12px;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  margin-right: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -540,7 +545,7 @@ body {
 
 .bonus-text {
   flex: 1;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .bonus-text div:first-child {
@@ -551,8 +556,8 @@ body {
 .bonus-btn {
   background: #00d09c;
   border: none;
-  padding: 8px 16px;
-  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  border-radius: 1.2rem;
   font-weight: bold;
   cursor: pointer;
   color: black;
@@ -560,8 +565,8 @@ body {
 
 .view-all {
   text-align: center;
-  margin-top: 8px;
-  font-size: 15px;
+  margin-top: 0.5rem;
+  font-size: 1rem;
 }
 .text-light p {
   margin: 0;
@@ -584,8 +589,8 @@ section ul li a {
   padding: 0.25rem 0.5rem;
 }
 
-section > div > p:first-child {
-  font-size: 1.2rem;
+.security-title {
+  font-size: 1rem;
   font-weight: bold;
   margin: 1rem 0 0.5rem;
 }
@@ -598,38 +603,38 @@ section > div > p:first-child {
 
 .voucher {
   background: #0f2c28; /* green background */
-  border-radius: 12px;
-  width: 200px;
-  padding: 20px;
+  border-radius: 1.2rem;
+  width: 13rem;
+  padding: 1.2rem;
   text-align: center; /* center content */
   font-family: Arial, sans-serif;
 }
 
 .voucher-amount {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #00d29d; /* bright green */
-  margin: 8px 0;
+  margin: 0.5rem 0;
 }
 
 .voucher-title {
-  font-size: 14px;
-  margin: 8px 0;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
   color: #fff;
 }
 
 .voucher-available {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #aaa;
-  margin: 8px 0;
+  margin: 0.5rem 0;
 }
 
 .voucher-btn {
   background: #00d29d;
   color: #fff;
   border: none;
-  padding: 8px 20px;
-  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  border-radius: 1.2rem;
   cursor: pointer;
   font-weight: bold;
 }
@@ -641,21 +646,21 @@ section > div > p:first-child {
 .section-3-rw {
   background: #222;
   color: #fff;
-  border-radius: 12px;
-  padding: 20px;
+  border-radius: 1.2rem;
+  padding: 1.2rem;
   width: 100%; /* full width */
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-  font-size: 16px; /* base font size bigger */
+  font-size: 1rem; /* base font size bigger */
 }
 
 /* Header */
 .section-3-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 
 .section-3-title i {
@@ -665,34 +670,34 @@ section > div > p:first-child {
 .section-3-rules a {
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 /* Card Top */
 .section-3-card {
   background: #333;
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 15px;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card-title {
   font-weight: bold;
-  margin-bottom: 10px;
-  font-size: 18px;
+  margin-bottom: 0.6rem;
+  font-size: 1.5rem;
 }
 
 .card-times {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 16px;
+  gap: 0.6rem;
+  font-size: 1rem;
 }
 
 .time-box {
   background: #111;
-  padding: 6px 14px;
-  border-radius: 8px;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.5rem;
 }
 
 .time-box.active {
@@ -702,14 +707,14 @@ section > div > p:first-child {
 .countdown {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 0.4rem;
   margin-left: auto;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .count-box {
   background: #ff4d6d;
-  padding: 6px 10px;
+  padding: 0.4rem 0.6rem;
   border-radius: 5px;
   font-weight: bold;
 }
@@ -717,8 +722,8 @@ section > div > p:first-child {
 /* Offer Section */
 .section-3-offer {
   background: #0f2c28;
-  border-radius: 10px;
-  padding: 15px;
+  border-radius: 0.6rem;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -728,50 +733,50 @@ section > div > p:first-child {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .discount {
   background: #c5f5ff;
   color: #000;
-  font-size: 14px;
-  padding: 3px 8px;
-  border-radius: 6px;
+  font-size: 0.9rem;
+  padding: 3px 0.5rem;
+  border-radius: 0.4rem;
   font-weight: bold;
 }
 
 .offer-logo {
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
 }
 
 .offer-details {
   flex: 1;
-  padding: 0 15px;
-  font-size: 16px;
+  padding: 0 1rem;
+  font-size: 1rem;
 }
 
 .offer-text {
-  margin-bottom: 8px;
-  font-size: 18px;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .progress {
   background: #006d55;
-  height: 8px;
+  height: 0.5rem;
   border-radius: 4px;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   text-align: right;
-  font-size: 13px;
+  font-size: 0.9rem;
   color: #00d29d;
 }
 
 .new-price {
   color: #00d29d;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.5rem;
   display: inline-block;
   margin-right: 5px;
 }
@@ -779,7 +784,7 @@ section > div > p:first-child {
 .old-price {
   color: #aaa;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .offer-action {
@@ -790,11 +795,11 @@ section > div > p:first-child {
 .remind-btn {
   background: #00d29d;
   border: none;
-  padding: 8px 20px;
-  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  border-radius: 1.2rem;
   color: #fff;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -802,65 +807,41 @@ section > div > p:first-child {
 .section-4-rw {
   background: #2b2b2b !important;
   color: white;
-  padding: 16px;
-  border-radius: 12px;
+  padding: 1rem;
+  border-radius: 1.2rem;
   width: 100%;
   box-sizing: border-box;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   font-family: Arial, sans-serif;
 }
 
-.section-4-rw .bonus-title {
-  font-size: 20px;
+.bonus-title {
+  font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 12px;
+  align-self: flex-end;
+  color: white;
 }
 
 .bonus-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 12px;
-  padding: 12px;
-  margin-bottom: 10px;
+  border-radius: 1.2rem;
+  padding: 1.2rem;
+  margin-bottom: 0.6rem;
 }
 
 .bonus-icon {
   background: white;
   color: black;
-  padding: 10px;
-  border-radius: 8px;
-  margin-right: 12px;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  margin-right: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.bonus-text {
-  flex: 1;
-  font-size: 16px;
-}
-
-.bonus-text div:first-child {
-  font-weight: bold;
-  margin-bottom: 4px;
-}
-
-.bonus-btn {
-  background: #00d09c;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  color: black;
-}
-
-.view-all {
-  text-align: center;
-  margin-top: 8px;
-  font-size: 15px;
-}
 .text-light p {
   margin: 0;
 }
@@ -871,17 +852,17 @@ section > div > p:first-child {
   align-items: center;
   justify-content: space-between;
   background: #e6fff5;
-  padding: 16px;
-  border-radius: 12px;
+  padding: 1rem;
+  border-radius: 1.2rem;
   width: 100%;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
 .discount-info p {
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
   color: #111;
 }
 .discount-info {
@@ -891,21 +872,20 @@ section > div > p:first-child {
 .discount-btn {
   background: #00d09c;
   border: none;
-  padding: 10px 18px;
-  border-radius: 20px;
+  padding: 0.6rem 1.5rem;
+  border-radius: 1.2rem;
   font-weight: bold;
   cursor: pointer;
   color: white;
 }
 
 .discount-img img {
-  max-width: 120px;
+  max-width: 11.2rem;
   height: auto;
 }
 .text-light {
   gap: 1rem;
 }
-
 
 /* HEADER SECTION */
 .section-1-fn {
@@ -914,7 +894,7 @@ section > div > p:first-child {
 }
 
 .section-1-fn h2 {
-  font-size: 20px;
+  font-size: 1.2rem;
   margin: 0;
   font-weight: bold;
 }
@@ -928,7 +908,7 @@ section > div > p:first-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 0.6rem;
   font-size: 0.875rem;
 }
 .nav-link {
@@ -981,25 +961,25 @@ section > div > p:first-child {
 /* OWealth CARD */
 .section-2-fn {
   background-color: #2e1f48; /* purple tone */
-  margin: 15px;
-  padding: 15px;
-  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.6rem;
 }
 
 .section-2-fn h2 {
-  margin: 0 0 8px 0;
-  font-size: 16px;
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
   color: white;
 }
 
 .section-2-fn div {
-  font-size: 13px;
+  font-size: 0.9rem;
   margin-bottom: 5px;
   color: #ccc;
 }
 
 .section-2-fn div:last-child {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   color: white;
 }
@@ -1014,28 +994,28 @@ section > div > p:first-child {
 .section-3-fn {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  padding: 0 15px 15px 15px;
+  gap: 1.2rem;
+  padding: 0 1rem 1rem 1rem;
 }
 
 .section-3-fn > div {
   background-color: #111;
-  padding: 15px;
-  border-radius: 10px;
-  font-size: 13px;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  font-size: 0.9rem;
   color: #bbb;
 }
 
 .section-3-fn > div div:first-child {
   font-weight: bold;
-  font-size: 14px;
-  margin-bottom: 6px;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
   color: #a87cf0; /* purple accent for titles */
 }
 
 .section-3-fn > div p {
   margin: 2px 0;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .section-3-fn img {
@@ -1047,9 +1027,10 @@ section > div > p:first-child {
   color: #7d4fff;
 }
 
-
 /* Card Section */
-
+.header-cd {
+  padding-top: 2rem;
+}
 .header-cd .text-left {
   justify-self: right;
   font-size: 1.4rem;
@@ -1081,12 +1062,37 @@ section > div > p:first-child {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -6px;
+  bottom: -0.4rem;
   width: 100%;
   height: 4px; /* big underline */
   background-color: #fff;
   border-radius: 2px;
 }
+.discount-badge {
+  position: absolute;
+  top: -6px;
+  right: -30px;
+  background: linear-gradient(90deg, #ff6a6a, #ff4d8d);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  padding: 2px 6px;
+  letter-spacing: 0.3px;
+}
+.help {
+  position: absolute;
+  top: 1.3125rem;
+  right: 6.34375rem;
+  background: #f8f6f0;
+  color: red;
+  font-size: 8px;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  padding: 1px 3px;
+  letter-spacing: 1px;
+}
+
 .terms-sect {
   background: black;
   padding: 1rem;
@@ -1094,17 +1100,17 @@ section > div > p:first-child {
 
 .card-container {
   background: #1c1c1c;
-  border-radius: 12px;
-  padding: 20px;
-  max-width: 400px;
+  border-radius: 1.2rem;
+  padding: 1.2rem;
+  max-width: 28rem;
   margin: auto;
 }
 
 .virtual-card {
   background: #00c896;
-  height: 200px;
-  border-radius: 12px;
-  margin-bottom: 20px;
+  height: 13rem;
+  border-radius: 1.2rem;
+  margin-bottom: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1116,30 +1122,31 @@ section > div > p:first-child {
 .feature {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 18px;
+  margin-bottom: 1.5rem;
 }
 
 .feature-icon {
-  width: 28px;
-  height: 28px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   background: #333;
-  margin-right: 10px;
+  margin-right: 0.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 .feature-text p {
   margin: 0;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 .feature-text div {
-  font-size: 13px;
+  font-size: 0.9rem;
   color: #aaa;
+  max-width: 366px;
 }
 
 a {
@@ -1150,12 +1157,12 @@ a {
 .terms {
   display: flex;
   align-items: center;
-  font-size: 13px;
-  margin: 20px 0;
+  font-size: 0.9rem;
+  margin: 1.2rem 0;
 }
 
 .terms input {
-  margin-right: 8px;
+  margin-right: 0.5rem;
 }
 
 .cta button {
@@ -1172,27 +1179,26 @@ a {
 
 .cta del {
   color: #ccc;
-  margin-left: 6px;
-  font-size: 14px;
+  margin-left: 0.4rem;
+  font-size: 0.9rem;
 }
-
 
 /* Each feature item */
 body > div:first-child > div > div {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 1.2rem;
 }
 
 /* Feature text */
 body > div:first-child p {
   margin: 0;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 body > div:first-child div div {
-  font-size: 13px;
+  font-size: 0.9rem;
   color: #ccc;
 }
 
@@ -1207,26 +1213,26 @@ body a {
 body > div:nth-of-type(2) {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin: 15px 0;
-  font-size: 13px;
+  gap: 0.6rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
   color: #ccc;
 }
 
 body input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   accent-color: #00c896;
 }
 
 /* Button */
 body > div:nth-of-type(3) button {
   width: 100%;
-  padding: 15px;
+  padding: 1rem;
   background: #00c896;
   border: none;
-  border-radius: 25px;
-  font-size: 16px;
+  border-radius: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #111;
   cursor: pointer;
@@ -1234,7 +1240,7 @@ body > div:nth-of-type(3) button {
 
 body > div:nth-of-type(3) button del {
   color: #333;
-  font-size: 14px;
+  font-size: 0.9rem;
   margin-left: 5px;
 }
 
@@ -1247,7 +1253,7 @@ body {
 
 /* Profile Header */
 .profile-header {
-  padding: 15px;
+  padding: 1rem;
   background: linear-gradient(to bottom, #0f2a24, #0b1f1a);
   display: flex;
   justify-content: space-between;
@@ -1257,19 +1263,19 @@ body {
 .profile-info {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1.5rem;
 }
 
 .profile-img {
-  width: 45px;
-  height: 45px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .profile-text .username {
   margin: 0;
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -1277,25 +1283,35 @@ body {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 12px;
+  font-size: 0.8rem;
 }
 
 .tier-label {
   background: #4c3b1f;
   color: #f3c56b;
-  padding: 2px 8px;
-  border-radius: 10px;
+  padding: 2px 0.5rem;
+  border-radius: 0.6rem;
+  position: relative;
+}
+.badge-icon img {
+  width: 1.2rem;
+  height: auto;
+}
+.badge-icon {
+  position: absolute;
+  left: -10px;
+  border-radius: 0.75rem;
 }
 
 /* Settings */
 .settings-icon {
-  font-size: 22px;
+  font-size: 1.3rem;
   cursor: pointer;
 }
 
 /* Balance */
 .balance-section {
-  padding: 20px;
+  padding: 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1312,11 +1328,14 @@ body {
   align-items: center;
   gap: 5px;
   color: #ccc;
-  font-size: 14px;
+  font-size: 0.9rem;
+}
+.balance-label p {
+  margin: 0;
 }
 
 .amount {
-  font-size: 28px;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
 }
@@ -1328,45 +1347,52 @@ body {
     rgba(0, 255, 163, 0.05)
   );
   border-radius: 50%;
-  padding: 15px;
+  padding: 1rem;
 }
-
+.shield-icon img {
+  width: 3.4rem;
+  height: auto;
+}
+.home-nav p {
+  margin-bottom: 0.5rem;
+}
 /* Security Section */
 .section-1-me {
   background: linear-gradient(90deg, #01d18e, #00c77b);
-  padding: 15px;
-  margin: 10px;
-  border-radius: 12px;
+  padding: 1rem;
+  margin: 0.6rem;
+  border-radius: 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
 }
 
 .security-title {
   font-weight: bold;
   margin: 0;
+  font-size: 0.8rem;
 }
 
 .security-sub {
-  font-size: 13px;
+  font-size: 0.5rem;
 }
 
 .security-btn button {
   background: #0f2a24;
   border: none;
-  padding: 8px 18px;
-  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  border-radius: 1.1rem;
   color: #fff;
-  font-size: 14px;
-  cursor: pointer;
+  font-size: 1rem;
 }
 
 /* Menu Cards */
 .section-2-me,
 .section-3-me {
-  margin: 15px 10px;
+  margin: 1rem 0.6rem;
   background: #1a1f1d;
-  border-radius: 12px;
+  border-radius: 1.2rem;
   overflow: hidden;
 }
 
@@ -1374,7 +1400,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 1rem;
   border-bottom: 1px solid #2b2f2d;
 }
 
@@ -1385,7 +1411,7 @@ body {
 .menu-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 2rem;
 }
 
 .menu-text p {
@@ -1394,19 +1420,25 @@ body {
 }
 
 .menu-sub {
-  font-size: 12px;
+  font-size: 1rem;
   color: #bbb;
 }
 
 .menu-arrow {
   text-decoration: none;
   color: #666;
-  font-size: 18px;
+  font-size: 1.5rem;
 }
-
+.section-6-sub {
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
 /* Footer */
 .footer {
-  margin: 20px;
+  margin: 1.2rem;
   text-align: center;
 }
 
@@ -1414,13 +1446,56 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-  font-size: 12px;
+  gap: 0.5rem;
+  font-size: 1.2rem;
   color: #bbb;
 }
 
 .footer-logo {
-  width: 20px;
+  width: 2rem;
+}
+.menu-sub {
+  font-size: 0.8rem;
+  color: #bbb;
+}
+/* FLoating Modal */
+.floating-modal {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  left: auto;
+  top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  cursor: grab;
+}
+
+.floating-modal:active {
+  cursor: grabbing;
+}
+
+.floating-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00c48c, #00e6a0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.floating-text {
+  background-color: #00c48c;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 4px 10px;
+  margin-top: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Section 3, 4, 5 Styling Shared */
@@ -1446,15 +1521,96 @@ body {
 body::after {
   content: "";
   display: block;
-  height: 60px; /* simulate bottom navbar height */
+  height: 4rem; /* simulate bottom navbar height */
 }
 
 /* Responsive tweaks */
 @media screen and (max-width: 768px) {
-  .section-1-rw-nav div {
-    font-size: 0.75rem;
+  /* Reward Section Responsive */
+  body {
+    font-size: 1rem;
+  }
+  body::after {
+    height: 3rem;
+  }
+  .help {
+    top: 1.5rem;
+    right: 6.5rem;
+    background: #f8f6f0;
+    color: red;
+    font-size: 6px;
+  }
+  .home-nav p {
+    margin-bottom: 0.5rem;
+  }
+  .profile-info {
+    gap: 1rem;
+  }
+  .tier {
+    padding-top: 0.3rem;
+  }
+  .profile-text .username {
+    font-size: 1rem;
+  }
+  .badge-icon {
+    left: -3px;
+    top: -2px;
+  }
+  .shield-icon img {
+    width: 2.5rem;
+    height: auto;
+  }
+  .amount {
+    font-size: 1.8rem;
+  }
+  .shield-icon img {
+    width: 2.5rem;
+    height: auto;
   }
 
+  .security-btn button {
+    font-size: 0.7rem;
+  }
+  .menu-arrow {
+    font-size: 1.2rem;
+  }
+  .footer-content {
+    font-size: 0.8rem;
+  }
+  .balance-info {
+    gap: 3px;
+  }
+  .balance-label {
+    font-size: 0.8rem;
+  }
+  .menu-text {
+    font-size: 0.8rem;
+  }
+  .menu-left {
+    gap: 1.5rem;
+  }
+  .badge-icon img {
+    width: 0.8rem;
+  }
+  .tier-badge {
+    font-size: 0.5rem;
+  }
+  .profile-img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .section-1-rw-nav .card-img {
+    width: 3rem;
+  }
+  .section-1-rw-nav .card .refer-img {
+    padding-top: 1.5rem;
+  }
+  .section-1-rw-nav .card-title {
+    font-size: 1rem;
+  }
+  .section-1-rw .container-fluid a.navbar-brand {
+    width: auto;
+  }
   .section-2-rw > div:nth-child(2) > div {
     flex-direction: column;
     align-items: flex-start;
@@ -1463,5 +1619,616 @@ body::after {
   .section-2-rw button {
     margin-top: 0.5rem;
     align-self: flex-end;
+  }
+
+  .section-3-header,
+  .section-3-card .card-title,
+  .offer-text,
+  .new-price {
+    font-size: 1.2rem;
+  }
+  .remind-btn {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .hero-balance {
+    gap: 0.2rem;
+  }
+  .help {
+    top: 1.75rem;
+    right: 6rem;
+    font-size: 4.9px;
+    font-weight: 600;
+  }
+  .heading-links {
+    font-size: 0.5rem;
+  }
+  .hero-balance-text {
+    font-size: 1rem;
+  }
+  .hero-amount-balance {
+    font-size: 1.5rem;
+  }
+  .hero-history {
+    margin-right: 0;
+    font-size: 1.2rem;
+    font-size: 1rem;
+    gap: 0.2rem;
+  }
+  .hero-history .hero-icon {
+    font-size: 0.8rem;
+  }
+  .hero-history .hero-text {
+    font-size: 1rem;
+  }
+
+  .hero-money-add {
+    margin-right: 0;
+    font-size: 0.8rem;
+    width: 7rem;
+  }
+  .section-3-text {
+    width: auto;
+  }
+  .section-3 img {
+    width: 8rem;
+  }
+  .section-5-gift-link {
+    font-size: 0.8rem;
+    gap: 0.5rem;
+  }
+  .section-6-sub {
+    gap: 3.5rem;
+  }
+  .section-1,
+  .section-2,
+  .section-4,
+  .section-5-bonus,
+  .section-5-gift-text,
+  .section-6 {
+    font-size: 0.8rem;
+  }
+  .section-5 img {
+    font-size: 1.6rem;
+  }
+  .section-1 .arrow-up {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  .section-5-bonus button {
+    padding: 0.35rem 0.7rem;
+    border-radius: 1rem;
+  }
+}
+@media screen and (max-width: 449px) {
+  .section-5-bonus-sub {
+    font-size: 0.7rem;
+  }
+  .section-5-gift {
+    margin: auto 2rem;
+  }
+  .section-3-text {
+    font-size: 0.6rem;
+  }
+  .section-5-bonus button {
+    padding: 0.25rem 0.5rem;
+  }
+  .section-3 img {
+    width: 7rem;
+  }
+  .hero-balance-history {
+    margin-bottom: 0.5rem;
+  }
+  .hero-history .hero-text {
+    font-size: 0.9rem;
+  }
+  .section-5-bonus button {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 409px) {
+  .hero-balance-text {
+    font-size: 0.8rem;
+  }
+  .hero-balance .heading-links {
+    font-size: 0.3rem;
+  }
+  .hero-amount-icon {
+    font-size: 0.6rem;
+  }
+  .hero-amount-balance {
+    font-size: 0.8rem;
+  }
+  .hero-money-add {
+    font-size: 0.6rem;
+  }
+  .section-1 {
+    font-size: 0.6rem;
+  }
+  .section-6 {
+    padding: 0.5rem;
+    margin: 0.8rem;
+  }
+  .section-6-sub {
+    gap: 2.5rem;
+  }
+  .hero {
+    padding: 0.8rem;
+  }
+  .hero-history .hero-text {
+    font-size: 0.7rem;
+  }
+  .hero-history .hero-icon {
+    font-size: 0.5rem;
+  }
+  .hero-money-add {
+    width: 5rem;
+  }
+  .section-2,
+  .section-4 {
+    font-size: 0.5rem;
+  }
+  .section-3 {
+    padding: 0;
+  }
+  .section-5 {
+    padding: 0.5rem;
+  }
+  .section-5-bonus {
+    margin-top: 0;
+  }
+  .section-6,
+  .section-5-gift-text {
+    font-size: 0.6rem;
+  }
+  .section-6 {
+    padding: 0.6rem;
+  }
+  .section-5-bonus {
+    padding: 0rem;
+  }
+  .section-5 img {
+    width: 1.4rem;
+  }
+  .section-5-gift-link {
+    font-size: 0.7rem;
+    gap: 0;
+  }
+  .heading {
+    padding: 0.5rem;
+  }
+  .heading-username {
+    font-size: 0.6rem;
+  }
+  .heading img {
+    width: 2rem;
+  }
+  .heading-links {
+    font-size: 0.4rem;
+  }
+  .heading .heading-links {
+    gap: 1rem;
+  }
+  .hero .hero-money-add,
+  .hero-history {
+    margin-right: 0;
+  }
+  .hero-balance {
+    gap: 0.3rem;
+  }
+  .hero-history {
+    gap: 0.2rem;
+  }
+  .section-1 .arrow-up {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+  .section-1 {
+    margin: 0.8rem;
+    padding: 0.6rem;
+  }
+  .section-3 img {
+    width: 5rem;
+  }
+  .section-5-gift {
+    margin: auto 0rem;
+    gap: 0;
+  }
+  .section-5-bonus-sub {
+    gap: 0.5rem;
+    font-size: 0.5rem;
+  }
+
+  .section-5-bonus,
+  .section-5-gift {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .menu-sub {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .security-btn button {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+  .balance-section {
+    padding: 0.5rem 1rem;
+  }
+  .home-nav a {
+    font-size: 0.5rem;
+  }
+  .home-nav p {
+    margin-bottom: 0;
+  }
+  .home-nav img {
+    width: 0.6rem;
+  }
+  .profile-info {
+    gap: 0.8rem;
+  }
+  .help {
+    top: 1.75rem;
+    right: 6rem;
+    font-size: 4.9px;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    padding: 1px 3px;
+    letter-spacing: 0.1px;
+  }
+  .balance-section {
+    padding: 1rem;
+  }
+  .security-sub {
+    font-size: 0.5rem;
+  }
+  .menu-left {
+    gap: 1rem;
+  }
+  .footer-logo {
+    width: 1.5rem;
+  }
+  .footer-content {
+    font-size: 0.6rem;
+  }
+  .tier-label {
+    padding: 1px 0.5rem;
+  }
+  .menu-arrow {
+    font-size: 1rem;
+  }
+  .menu-icon {
+    font-size: 0.8rem;
+  }
+  .menu-sub {
+    font-size: 0.6rem;
+    color: #bbb;
+  }
+
+  .balance-info {
+    gap: 0;
+  }
+  .balance-label {
+    font-size: 0.7rem;
+  }
+  .amount {
+    font-size: 1.5rem;
+  }
+  .shield-icon img {
+    width: 2rem;
+  }
+
+  .feature-text div,
+  .terms div {
+    font-size: 0.7rem;
+  }
+  .cta button {
+    width: 70%;
+    padding: 0.7rem;
+    font-size: 0.7rem;
+  }
+  .terms {
+    margin: 1rem 0;
+    justify-content: center;
+  }
+  .terms div {
+    font-size: 0.7rem;
+  }
+  .terms input {
+    margin-right: 0.3rem;
+  }
+  .header-cd .text-left {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .text-right {
+    font-size: 0.8rem;
+  }
+  .discount-badge {
+    position: absolute;
+    top: 0.6px;
+    right: -15.6px;
+    background: linear-gradient(90deg, #ff6a6a, #ff4d8d);
+    color: #fff;
+    font-size: 0.4rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    padding: 1.2px 4.9px;
+    letter-spacing: 0px;
+  }
+  .nav {
+    font-size: 0.8rem;
+  }
+  .feature-text p {
+    font-size: 0.8rem;
+  }
+  .virtual-card {
+    height: 10rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1em;
+  }
+  .card-container {
+    border-radius: 0.6rem;
+  }
+  .cta del {
+    margin-left: 0.2rem;
+    font-size: 0.7rem;
+  }
+  .cta {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-3-fn > div {
+    font-size: 0.5rem;
+  }
+  .section-3-fn > div p {
+    font-size: 0.8rem;
+  }
+  .rw-first {
+    font-size: 0.8rem;
+  }
+  .voucher-sect .d-flex {
+    gap: 0.3rem !important;
+    font-size: 0.7rem;
+  }
+  .section-2-fn div {
+    font-size: 0.7rem;
+  }
+  .section-2-fn div:last-child {
+    font-size: 0.9rem;
+  }
+  .voucher-sect {
+    margin-bottom: 1rem;
+  }
+  .section-3-rw div,
+  .section-4-rw div,
+  .section-5-rw div {
+    margin-bottom: 0;
+  }
+  .section-3-header,
+  .section-3-card .card-title,
+  .offer-text,
+  .new-price {
+    font-size: 1rem;
+  }
+  .section-3-rw,
+  .section-4-rw,
+  .section-5-rw {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+  }
+  .bonus-text div:first-child {
+    margin-bottom: 0;
+  }
+  .card-header {
+    padding: 0.2rem 0.5rem;
+  }
+  .countdown {
+    gap: 0.2rem;
+    font-size: 0.7rem;
+  }
+  .time-box {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+  }
+  .discount {
+    font-size: 0.5rem;
+  }
+  .section-3-offer {
+    padding: 0.5rem;
+  }
+  .offer-details {
+    padding: 0 0.5rem;
+  }
+  .section-3-rw p,
+  .section-5-rw p {
+    margin-bottom: 0rem;
+  }
+  .remind-btn {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.6rem;
+  }
+  .discount-info {
+    font-size: 0.8rem;
+  }
+  .discount-info p {
+    font-size: 0.7rem;
+  }
+  .discount-img img {
+    max-width: 4rem;
+  }
+  .rw-voucher img {
+    height: 2rem;
+  }
+  .rw-voucher ul {
+    font-size: 0.7rem;
+  }
+  .voucher-btn {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+  }
+  .view-all {
+    font-size: 0.7rem;
+  }
+  .voucher-amount,
+  .voucher-available {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .voucher-title {
+    font-size: 0.7rem;
+    margin: 0;
+  }
+  .voucher {
+    width: 9rem;
+    padding: 0.7rem;
+  }
+  .bonus-btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+  }
+  .bonus-text {
+    font-size: 0.7rem;
+  }
+  .section-1-rw-nav .card-title {
+    font-size: 0.3rem;
+    margin-bottom: 0;
+  }
+  .section-1-rw-nav .card-contain {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .section-1-rw-nav .card .refer-img {
+    padding-top: 0.5rem;
+  }
+  .section-1-rw-nav .card {
+    padding: 0.7rem;
+    border-radius: 1.5rem;
+  }
+  .section-1-rw .container-fluid a.navbar-brand {
+    font-size: 1.5rem;
+  }
+  .navbar-light .navbar-toggler {
+    font-size: 0.8rem;
+  }
+  .section-1-rw .cashback {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  .bonus-title {
+    font-size: 0.8rem;
+  }
+  .section-1-rw .voucher-220 {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  .section-2-rw {
+    margin-top: 6rem;
+  }
+  .bonus-icon {
+    padding: 0.4rem;
+    margin-right: 0.5rem;
+    font-size: 0.7rem;
+  }
+  .bonus-item {
+    padding: 0.5rem;
+    margin-bottom: 0;
+    gap: 1rem;
+  }
+  .golden-naira {
+    width: auto;
+  }
+  .section-1-rw .golden {
+    margin-bottom: 2.5rem;
+  }
+  .section-1-rw-nav .card-img {
+    padding-bottom: 10px;
+    margin: 0;
+    width: 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .security-btn button {
+    font-size: 0.6rem;
+  }
+  .help {
+    top: 0.95rem;
+    right: 4.3rem;
+    font-size: 4px;
+    font-weight: 600;
+    border-radius: 0.35rem;
+  }
+  .section-1-me {
+    padding: 0.7rem;
+  }
+  .amount {
+    font-size: 1.3rem;
+  }
+  .balance-label {
+    font-size: 0.6rem;
+  }
+  .feature-text div {
+    max-width: 300px;
+  }
+  .feature {
+    margin-bottom: 1rem;
+  }
+  .section-1-rw-nav .card-img {
+    width: 1.2rem;
+    padding-bottom: 8px;
+  }
+  .section-1-rw .cashback,
+  .section-1-rw .voucher-220 {
+    font-size: 0.7rem;
+  }
+  .section-1-rw-nav .card-contain {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 1.5rem;
+  }
+  .section-1-rw .golden .naira-book img {
+    width: 1.3rem;
+  }
+  .bonus-text {
+    font-size: 0.5rem;
+  }
+  .section-1-rw .golden a {
+    font-size: 1rem;
+  }
+  .section-3-header,
+  .section-3-card .card-title,
+  .offer-text,
+  .new-price {
+    font-size: 0.8rem;
+  }
+  .rw-voucher .rw-first {
+    padding-left: 1rem;
+  }
+  .section-1-rw-nav .card .refer-img {
+    padding-top: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .security-btn button {
+    font-size: 0.48rem;
+  }
+  .rw-voucher img {
+    height: 1.5rem;
+  }
+  .feature-text div {
+    max-width: 240px;
+  }
+  .feature-text div,
+  .terms div {
+    font-size: 0.5rem;
+  }
+  .nav {
+    font-size: 0.7rem;
   }
 }

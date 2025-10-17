@@ -60,8 +60,12 @@
                 <div class="heading-username"><a href="profile.html" target="_blank">Hi,Username</a></div>
             </div>
             <div class="heading-links">
-                <a href="customer.html" target="_blank"><i class="fa-solid fa-2x fa-headset"></i></a>
-                <a href=""><i class="fa-solid  fa-2x fa-expand"></i></a>
+                <a href="customer.html" target="_blank" class="headset">
+                    <div><i class="fa-solid fa-2x fa-headset"></i>
+</div>
+                    <span class="help">HELP</span>
+                </a>
+                <a href=""><i class="fa-solid fa-2x fa-expand"></i></a>
                 <a href="notification.html" target="_blank"><i class="fa-solid  fa-2x fa-bell"></i></a>
             </div>
         </div>
@@ -72,11 +76,11 @@
             <div class="hero-balance">
                 <div class="heading-links"><i class="fa-2x fa-solid fa-shield"></i></div>
                 <div class="hero-balance-text">Available Balance</div>
-                <di class="heading-links"><i class="fa-2x fa-solid fa-eye"></i></div>
+                <div class="heading-links"><i class="fa-2x fa-solid fa-eye"></i></div>
             </div>
             <div class="hero-history">
-                <div></div><a href="">Transaction History</a>
-                <div><a href=""><i class="fa-solid fa-angle-right"></i></a></div>
+                <div class="hero-text"><a href="">Transaction History</a></div>
+                <div class="hero-icon"><a href=""><i class="fa-solid fa-angle-right"></i></a></div>
             </div>
         </div>
         <div class="hero-money">
@@ -178,32 +182,42 @@
 
     <section class="section-5">
         <div class="section-5-gift">
-            <div>Special Bonus For Your</div>
+            <div class="section-5-gift-text">Special Bonus For You</div>
             <div class="section-5-gift-link">
                 <img src="../img/gift.png" alt="Gift image">
-                <div><a href=""><i class="fa-solid fa-angle-right"> </i></a></div>
+                <div><a href="" class="text-light"><i class="fa-solid fa-angle-right"> </i></a></div>
             </div>
         </div>
 
         <div class="section-5-bonus">
             <div class="section-5-bonus-sub">
-                <i class="fa-solid fa-signal"></i>
+                <div>
+                    <i class="fa-solid fa-signal"></i>
+                </div>
                 <div class="section-5-bonus-align">
                     <div>Airtime & Data Voucher</div>
                     <div>Get ₦100 airtime & ₦100 data for free</div>
                 </div>
             </div>
             <div><button>Go</button></div>
+            
         </div>
     </section>
 
     <section class="section-6 text-success">
-        <div><i class="fa-solid fa-bullhorn"></i></div>
-        <div>
-            <p>Cash up for grabs</p>
-            <p>Invite friends and earn up to ₦5,600 Bonus</p>
+        <div class="section-6-sub">
+            <div class="invite-icon"><i class="fa-solid fa-bullhorn"></i></div>
+            <div class="invite-text">
+                <p>Cash up for grabs</p>
+                <p>Invite friends and earn up to ₦5,600 Bonus</p>
+            </div>
         </div>
     </section>
+    <div class="floating-modal">
+        <img src="/img/shield.png" alt="Security" class="floating-icon" >
+        <div class="floating-text">Click for Security</div>
+    </div>
+
 
 
     <script src="/js/bootstrap.bundle.min.js"></script>
