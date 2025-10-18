@@ -23,34 +23,33 @@ if (cardNav) {
   });
 }
 
-// === Modal Event Listener ===
-const modal = document.querySelector(".floating-modal");
+// === Floating Modal Drag Script ===
+const modal = document.getElementById("floatingModal");
 
 let isDragging = false;
-let offsetX, offsetY;
+let offsetX = 0;
+let offsetY = 0;
 
-if (modal) {
-  modal.addEventListener("mousedown", (e) => {
-    isDragging = true;
-    offsetX = e.clientX - modal.getBoundingClientRect().left;
-    offsetY = e.clientY - modal.getBoundingClientRect().top;
+modal.addEventListener("mousedown", (e) => {
+  isDragging = true;
+  offsetX = e.clientX - modal.getBoundingClientRect().left;
+  offsetY = e.clientY - modal.getBoundingClientRect().top;
+  modal.classList.add("dragging");
+});
 
-    // Change to absolute positioning within viewport during drag
-    modal.style.transition = "none";
-    modal.style.position = "fixed";
-  });
+document.addEventListener("mousemove", (e) => {
+  if (!isDragging) return;
+  e.preventDefault();
+  modal.style.left = `${e.clientX - offsetX}px`;
+  modal.style.top = `${e.clientY - offsetY}px`;
+});
 
-  document.addEventListener("mousemove", (e) => {
-    if (isDragging) {
-      modal.style.left = `${e.clientX - offsetX}px`;
-      modal.style.top = `${e.clientY - offsetY}px`;
-      modal.style.bottom = "auto";
-      modal.style.right = "auto";
-    }
-  });
+document.addEventListener("mouseup", () => {
+  isDragging = false;
+  modal.classList.remove("dragging");
+});
 
-  document.addEventListener("mouseup", () => {
-    isDragging = false;
-    modal.style.transition = "0.2s ease"; // optional smoothness
-  });
-}
+// Prevent image drag interference
+modal
+  .querySelector("img")
+  .addEventListener("dragstart", (e) => e.preventDefault());
