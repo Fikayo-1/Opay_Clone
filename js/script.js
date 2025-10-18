@@ -23,33 +23,70 @@ if (cardNav) {
   });
 }
 
-// === Floating Modal Drag Script ===
-const modal = document.getElementById("floatingModal");
+(function () {
+  const modal = document.getElementById("floatingModal");
+  if (!modal) return;
 
-let isDragging = false;
-let offsetX = 0;
-let offsetY = 0;
+  let dragging = false;
+  let offsetX = 0, offsetY = 0;
+  let modalW = 0, modalH = 0;
 
-modal.addEventListener("mousedown", (e) => {
-  isDragging = true;
-  offsetX = e.clientX - modal.getBoundingClientRect().left;
-  offsetY = e.clientY - modal.getBoundingClientRect().top;
-  modal.classList.add("dragging");
-});
+  function clamp(v, min, max) {
+    return Math.min(Math.max(v, min), max);
+  }
 
-document.addEventListener("mousemove", (e) => {
-  if (!isDragging) return;
-  e.preventDefault();
-  modal.style.left = `${e.clientX - offsetX}px`;
-  modal.style.top = `${e.clientY - offsetY}px`;
-});
+  // Handle drag start (mouse or touch)
+  modal.addEventListener("pointerdown", (e) => {
+    e.preventDefault();
 
-document.addEventListener("mouseup", () => {
-  isDragging = false;
-  modal.classList.remove("dragging");
-});
+    const rect = modal.getBoundingClientRect();
+    modal.style.position = "fixed";
+    modal.style.left = rect.left + "px";
+    modal.style.top = rect.top + "px";
+    modal.style.bottom = "auto";
+    modal.style.right = "auto";
+    modal.style.transition = "none";
 
-// Prevent image drag interference
-modal
-  .querySelector("img")
-  .addEventListener("dragstart", (e) => e.preventDefault());
+    modalW = rect.width;
+    modalH = rect.height;
+    offsetX = e.clientX - rect.left;
+    offsetY = e.clientY - rect.top;
+
+    dragging = true;
+    modal.classList.add("dragging");
+    modal.setPointerCapture?.(e.pointerId);
+  });
+
+  // Handle dragging
+  document.addEventListener("pointermove", (e) => {
+    if (!dragging) return;
+    e.preventDefault();
+
+    const maxX = window.innerWidth - modalW;
+    const maxY = window.innerHeight - modalH;
+
+    const newLeft = clamp(e.clientX - offsetX, 0, maxX);
+    const newTop = clamp(e.clientY - offsetY, 0, maxY);
+
+    modal.style.left = newLeft + "px";
+    modal.style.top = newTop + "px";
+  }, { passive: false });
+
+  // Handle drag end
+  document.addEventListener("pointerup", (e) => {
+    if (!dragging) return;
+    dragging = false;
+    modal.classList.remove("dragging");
+    modal.style.transition = "0.12s ease";
+    modal.releasePointerCapture?.(e.pointerId);
+  });
+
+  // Optional: keep modal inside visible area after resize/orientation change
+  window.addEventListener("resize", () => {
+    const rect = modal.getBoundingClientRect();
+    const maxX = window.innerWidth - modalW;
+    const maxY = window.innerHeight - modalH;
+    modal.style.left = clamp(rect.left, 0, maxX) + "px";
+    modal.style.top = clamp(rect.top, 0, maxY) + "px";
+  });
+})();
